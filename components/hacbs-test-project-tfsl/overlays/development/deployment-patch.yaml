@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-tfsl
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/quay_xjiang/rhtap-demo-qhzy-tenant/rhtap-demo-app/hacbs-test-project-tfsl@sha256:9019074980433abcd22f921d26b91ad2181dddd3e6836298ec59d8d5b539fdb7
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
